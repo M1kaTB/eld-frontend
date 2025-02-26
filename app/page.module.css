@@ -15,4 +15,5 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 8px;
 }
