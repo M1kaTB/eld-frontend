@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import styles from "./TripForm.module.scss";
 
 interface TripForm {
@@ -23,7 +23,7 @@ const TripForm = (props: TripForm) => {
     current_cycle_used: "",
   });
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setTrip({ ...trip, [e.target.name]: e.target.value });
   };
 
