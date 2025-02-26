@@ -30,7 +30,7 @@ const TripForm = (props: TripForm) => {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
-    props.onSubmit &&
+    if (props.onSubmit) {
       props.onSubmit(
         trip.current_location,
         trip.pickup_location,
@@ -39,6 +39,7 @@ const TripForm = (props: TripForm) => {
         trip.vehicle_id,
         trip.current_cycle_used
       );
+    }
   };
 
   return (

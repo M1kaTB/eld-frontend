@@ -76,8 +76,6 @@ export default function Home() {
           cycle_used: cycle_used,
         }
       );
-      console.log(`data:`, response.data);
-      console.log(`logs:`, response.data.daily_logs[0]);
       setData({
         date: response.data.date,
         driver_name: response.data.driver_name,

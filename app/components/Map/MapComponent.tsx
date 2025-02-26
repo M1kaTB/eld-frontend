@@ -16,7 +16,6 @@ const MapComponent = ({ loc1, loc2, loc3 }: MapComponentProps) => {
   const markersRef = useRef<mapboxgl.Marker[]>([]);
 
   const mapBoxApi = process.env.NEXT_PUBLIC_MAP_BOX_API;
-  console.log(mapBoxApi);
 
   useEffect(() => {
     mapboxgl.accessToken = mapBoxApi; 
@@ -38,7 +37,7 @@ const MapComponent = ({ loc1, loc2, loc3 }: MapComponentProps) => {
     mapRef.current = map;
 
     return () => map.remove();
-  }, []);
+  }, [mapBoxApi]);
 
   const drawRoute = async (
     a: [number, number],
