@@ -3,7 +3,6 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import styles from "./Map.module.scss";
 import axios from "axios";
-import { log } from "console";
 
 interface MapComponentProps {
   loc1?: [number, number] | null;
@@ -20,7 +19,7 @@ const MapComponent = ({ loc1, loc2, loc3 }: MapComponentProps) => {
   console.log(mapBoxApi);
 
   useEffect(() => {
-    mapboxgl.accessToken = mapBoxApi; // Replace with actual token
+    mapboxgl.accessToken = mapBoxApi; 
 
     if (!mapContainerRef.current) return;
 

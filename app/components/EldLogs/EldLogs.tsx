@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./EldLogs.module.scss";
 import EldLog from "./EldLog/EldLog";
 

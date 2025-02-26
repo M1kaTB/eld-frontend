@@ -1,12 +1,9 @@
 "use client";
-import Image from "next/image";
-import { Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import TripForm from "./components/TripForm/TripForm";
 import Map from "./components/Map/MapComponent";
 import EldLogs from "./components/EldLogs/EldLogs";
 import axios from "axios";
 import { useState } from "react";
-import { log } from "console";
 import styles from "./page.module.css";
 
 export default function Home() {

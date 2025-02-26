@@ -1,7 +1,4 @@
 "use client";
-import { FormControl } from "@mui/material";
-import axios from "axios";
-import { log } from "console";
 import { useState } from "react";
 import styles from "./TripForm.module.scss";
 
@@ -33,15 +30,6 @@ const TripForm = (props: TripForm) => {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
-    // try {
-    //   await axios.post("http://127.0.0.1:8000/api/trips/", trip);
-
-    //   alert("trip submitted sucesfully");
-    // } catch (err) {
-    //   console.log(err);
-    // }
-    console.log("hello");
-    console.log(trip);
     props.onSubmit &&
       props.onSubmit(
         trip.current_location,
