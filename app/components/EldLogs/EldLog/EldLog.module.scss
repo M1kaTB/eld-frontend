@@ -1,0 +1,134 @@
+.mainCont {
+  width: 100%;
+
+  p {
+    margin: 0;
+    color: white;
+  }
+
+  .topCont {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 50%;
+      margin-bottom: 18px;
+
+      .textsCont {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .info {
+          font-size: 15px;
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .subCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    border: solid 1px rgb(39, 39, 42);
+    padding: 16px;
+    margin-bottom: 18px;
+
+    .hoursCont {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .hoursSubCont {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .totalHours {
+          font-size: 15px;
+          color: gray;
+        }
+
+        .hoursText {
+          font-size: 15px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .logCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .time {
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .duty {
+        font-size: 14px;
+        color: gray;
+        text-transform: uppercase;
+      }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: right;
+
+        .action {
+            font-size: 14px;
+            text-transform: capitalize;
+            color: gray;
+        }
+
+        .odometer {
+            font-size: 12px;
+            text-transform: capitalize;
+            color: gray;
+        }
+    }
+  }
+  .logConstUnderline {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    border-bottom: solid 1px rgb(39, 39, 42);
+  }
+
+  .dataCont {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+}

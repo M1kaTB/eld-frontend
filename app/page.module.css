@@ -1,0 +1,18 @@
+.mainCont {
+  display: flex;
+  max-width: 1278px;
+  flex-direction: column;
+  width: 100%;
+  gap: 8;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topCont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+}

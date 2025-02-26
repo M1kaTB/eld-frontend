@@ -1,0 +1,85 @@
+.form {
+  max-width: 614px;
+  width: 100%;
+  max-width: 614px;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(9, 9, 11);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  border: solid 1px rgb(39, 39, 42);
+  padding: 20px;
+}
+
+.inputStyle {
+  padding: 4px 12px;
+  border-radius: calc(0.5rem - 2px);
+  border: none;
+  outline: none;
+  border: 1px solid rgb(39, 39, 42);
+  background-color: transparent;
+  color: hsl(240, 5%, 64.9%);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  height: 32px;
+}
+
+.button {
+  padding: 4px 12px;
+  border-radius: calc(0.5rem - 2px);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  height: 36px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.834);
+  }
+}
+
+.heading {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+}
+
+.subHeading {
+  color: gray;
+  font-size: 14px;
+  margin: 0;
+}
+
+.label {
+  font-size: 14px;
+  color: white;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8;
+}
+
+.headingCont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 8;
+}
